@@ -157,37 +157,7 @@ ohlc!(args...; kw...)      = plot!(args...; kw..., linetype = :ohlc)
 
 Some keyword arguments you can set:
 
-Keyword | Default Value | Aliases | Applies To
--- | -- | -- | --
-args | Any[] | [:args,:argss] | Series 
-axis | left | [:axis,:axiss] | Series 
-color | auto | [:c,:color,:colors] | Series 
-fillto | nothing | [:area,:fill,:fillto,:filltos] | Series 
-group | nothing | [:g,:group,:groups] | Series 
-heatmap_c | (0.15,0.5) | [:heatmap_c,:heatmap_cs] | Series 
-kwargs | Any[] | [:kwargs,:kwargss] | Series 
-label | AUTO | [:lab,:label,:labels] | Series 
-linestyle | solid | [:linestyle,:linestyles,:ls,:s,:style] | Series 
-linetype | path | [:linetype,:linetypes,:lt,:t,:type] | Series 
-marker | none | [:m,:marker,:markers] | Series 
-markercolor | match | [:markercolor,:markercolors,:mc,:mcolor] | Series 
-markersize | 6 | [:markersize,:markersizes,:ms,:msize] | Series 
-nbins | 100 | [:nb,:nbin,:nbins,:nbinss] | Series 
-reg | false | [:reg,:regs] | Series 
-ribbon | nothing | [:r,:ribbon,:ribbons] | Series 
-width | 1 | [:linewidth,:w,:width,:widths] | Series 
-background_color | RGB{Float64}(0.1,0.1,0.1) | [:background,:background_color,:bg,:bg_color,:bgcolor] | Plot 
-legend | true | [:leg,:legend] | Plot 
-show | false | [:display,:show] | Plot 
-size | (800,600) | [:size,:windowsize,:wsize] | Plot 
-title |  | [:title] | Plot 
-windowtitle | Plots.jl | [:windowtitle,:wtitle] | Plot 
-xlabel |  | [:xlab,:xlabel] | Plot 
-xticks | true | [:xticks] | Plot 
-ylabel |  | [:ylab,:ylabel] | Plot 
-yrightlabel |  | [:y2lab,:y2label,:ylab2,:ylabel2,:ylabelright,:ylabr,:yrightlabel,:yrlab] | Plot 
-yticks | true | [:yticks] | Plot 
-
+[[KEYWORD_ARGS_TABLE]]
 
 
 __Tip__: You can see the default value for a given argument with `plotDefault(arg::Symbol)`, and set the default value with `plotDefault!(arg::Symbol, value)`
